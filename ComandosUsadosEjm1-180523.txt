@@ -1,0 +1,155 @@
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23
+$ touch index.html app.js styles.css
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23
+$ git init
+Initialized empty Git repository in C:/Users/luisa/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23/.git/ 
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)        
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git add app.js index.html 
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        styles.css
+
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git commint -m "Commint 1"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        styles.css
+
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git log
+fatal: your current branch 'main' does not have any commits yet
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what 
+will be committed)
+  (use "git restore <file>..." to discard 
+changes in working directory)
+        modified:   app.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        styles.css
+
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git add .
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+        new file:   styles.css
+
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git commint -m "Agregando estilos"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git commit -m "Agregando estilos"       
+[main (root-commit) cd6c324] Agregando estilos
+ 3 files changed, 1 insertion(+)
+ create mode 100644 app.js
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git log
+commit cd6c324d416f65ed2d223e31c6e7ff73887c2bd8 (HEAD -> main)
+Author: LuisaParedes <luisaparee14@outlook.es>
+Date:   Thu May 18 21:25:18 2023 -0500    
+
+    Agregando estilos
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git log --oneline
+cd6c324 (HEAD -> main) Agregando estilos
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git remote add origin https://github.com/LuisaFParedes14/proyecto-web.git
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git remote -v
+origin  https://github.com/LuisaFParedes14/proyecto-web.git (fetch)
+origin  https://github.com/LuisaFParedes14/proyecto-web.git (push)
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads   
+Compressing objects: 100% (2/2), done.    
+Writing objects: 100% (4/4), 305 bytes | 152.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/LuisaFParedes14/proyecto-web.git
+ * [new branch]      main -> main
+
+luisa@DESKTOP-6MCQK03 MINGW64 ~/OneDrive/Escritorio/CODERHOUSE/IntroducciónInformatica/Clase18-05-23 (main)
+$
